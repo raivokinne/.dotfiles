@@ -1,0 +1,11 @@
+{
+    "tld": "test",
+    "loopback": "127.0.0.1",
+    "paths": {
+        "0": "/Users/raivokinne/.config/valet/Sites",
+        "2": "/Users/raivokinne/personal/universalhaven",
+        "3": "/Users/raivokinne/personal/shop",
+        "4": "/Users/raivokinne/personal/chat_app",
+        "5": "/Users/raivokinne/personal/connectwave"
+    }
+}
