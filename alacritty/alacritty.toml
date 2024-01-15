@@ -48,15 +48,15 @@ y = 10
 
 [colors.primary]
 background = "#000000"
-foreground = "#f8f8f2"
+foreground = "#ffffff"
 
 [colors.normal]
-black = "#21222c"
+black = "#000000"
 red = "#ff5555"
 green = "#50fa7b"
 yellow = "#f1fa8c"
 blue = "#bd93f9"
 magenta = "#ff79c6"
 cyan = "#8be9fd"
-white = "#f8f8f2"
+white = "#ffffff"
 

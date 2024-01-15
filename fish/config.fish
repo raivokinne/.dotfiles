@@ -5,6 +5,11 @@ end
 alias vim="nvim"
 alias ls="exa"
 
+alias ls="exa --icons --group-directories-first -1"
+function fzf
+    vim (command fzf $argv)
+end
+
 # Add Homebrew to PATH
 set -gx PATH /usr/local/Homebrew/bin $PATH
 
