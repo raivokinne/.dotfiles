@@ -1,0 +1,381 @@
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Event/WillShutdown.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Event/WillShutdown.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.0/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.0/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Core/Rpc/ResponseError.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Core/Rpc/ResponseError.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.0/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.0/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.0/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.0/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[13-Jan-2024 22:01:36 UTC] PHP Fatal error:  Uncaught Error: Class "Amp\Failure" not found in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php:177
+Stack trace:
+#0 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Coroutine.php(137): Amp\Coroutine->fail(Object(Error))
+#1 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php(149): Amp\Coroutine->Amp\{closure}(NULL, Object(Phpactor\LanguageServer\Core\Rpc\RawMessage))
+#2 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Coroutine.php(123): Amp\Coroutine->resolve(Object(Phpactor\LanguageServer\Core\Rpc\RawMessage))
+#3 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php(149): Amp\Coroutine->Amp\{closure}(NULL, 'Content-Length:...')
+#4 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Deferred.php(53): Amp\Promise@anonymous->resolve('Content-Length:...')
+#5 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/byte-stream/lib/ResourceInputStream.php(101): Amp\Deferred->resolve('Content-Length:...')
+#6 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/NativeDriver.php(327): Amp\ByteStream\ResourceInputStream::Amp\ByteStream\{closure}('a', Resource id #1, NULL)
+#7 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/NativeDriver.php(124): Amp\Loop\NativeDriver->selectStreams(Array, Array, 0.1)
+#8 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/Driver.php(138): Amp\Loop\NativeDriver->dispatch(true)
+#9 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/Driver.php(72): Amp\Loop\Driver->tick()
+#10 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop.php(95): Amp\Loop\Driver->run()
+#11 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/phpactor/language-server/lib/Core/Server/LanguageServer.php(111): Amp\Loop::run(Object(Closure))
+#12 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/lib/Extension/LanguageServer/Command/StartCommand.php(50): Phpactor\LanguageServer\Core\Server\LanguageServer->run()
+#13 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Command/Command.php(298): Phpactor\Extension\LanguageServer\Command\StartCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(1040): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Phpactor\Extension\LanguageServer\Command\StartCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/lib/Application.php(48): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(171): Phpactor\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/bin/phpactor(46): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 {main}
+  thrown in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php on line 177
+[14-Jan-2024 19:19:41 UTC] PHP Parse error:  syntax error, unexpected token "{" in Standard input code on line 8
+[14-Jan-2024 19:19:41 UTC] PHP Parse error:  syntax error, unexpected token "{" in Standard input code on line 8
+[14-Jan-2024 19:19:51 UTC] PHP Parse error:  syntax error, unexpected token "<" in Standard input code on line 7
+[14-Jan-2024 19:19:51 UTC] PHP Parse error:  syntax error, unexpected token "<" in Standard input code on line 7
+[14-Jan-2024 20:58:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /Users/raivokinne/personal/web/ecommerce-store/app/Http/Controllers/PageController.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/raivokinne/personal/web/ecommerce-store/app/Http/Controllers/PageController.php on line 7
+[14-Jan-2024 20:58:19 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /Users/raivokinne/personal/web/ecommerce-store/app/Http/Controllers/PageController.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/raivokinne/personal/web/ecommerce-store/app/Http/Controllers/PageController.php on line 7
+[14-Jan-2024 20:59:28 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /Users/raivokinne/personal/web/ecommerce-store/app/Http/Controllers/PageController.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/raivokinne/personal/web/ecommerce-store/app/Http/Controllers/PageController.php on line 7
+[15-Jan-2024 08:35:42 UTC] PHP Parse error:  syntax error, unexpected token "/", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:07 UTC] PHP Parse error:  syntax error, unexpected identifier "p", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:07 UTC] PHP Parse error:  syntax error, unexpected identifier "pu", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:07 UTC] PHP Parse error:  syntax error, unexpected identifier "pub", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:07 UTC] PHP Parse error:  syntax error, unexpected identifier "publ", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:07 UTC] PHP Parse error:  syntax error, unexpected identifier "publi", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:08 UTC] PHP Parse error:  syntax error, unexpected identifier "publiv", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:08 UTC] PHP Parse error:  syntax error, unexpected identifier "publiv", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:08 UTC] PHP Parse error:  syntax error, unexpected identifier "publiv", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:09 UTC] PHP Parse error:  syntax error, unexpected identifier "publi", expecting "function" in Standard input code on line 9
+[15-Jan-2024 08:36:09 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 10
+[15-Jan-2024 08:36:09 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 10
+[15-Jan-2024 08:36:10 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 10
+[15-Jan-2024 08:36:10 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 10
+[15-Jan-2024 08:36:10 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 11
+[15-Jan-2024 08:36:16 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 15
+[15-Jan-2024 08:36:17 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:17 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:17 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  Unclosed '(' on line 14 does not match '}' in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:19 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:20 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:20 UTC] PHP Parse error:  syntax error, unexpected identifier "publi", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:20 UTC] PHP Parse error:  syntax error, unexpected identifier "publ", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:20 UTC] PHP Parse error:  syntax error, unexpected identifier "pub", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:20 UTC] PHP Parse error:  syntax error, unexpected identifier "pu", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:22 UTC] PHP Parse error:  syntax error, unexpected identifier "pub", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:22 UTC] PHP Parse error:  syntax error, unexpected identifier "publ", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:22 UTC] PHP Parse error:  syntax error, unexpected identifier "publi", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:22 UTC] PHP Parse error:  syntax error, unexpected identifier "publiv", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:22 UTC] PHP Parse error:  syntax error, unexpected identifier "publiv", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:23 UTC] PHP Parse error:  syntax error, unexpected identifier "publiv", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:23 UTC] PHP Parse error:  syntax error, unexpected identifier "publiv", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:23 UTC] PHP Parse error:  syntax error, unexpected identifier "publiv", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:24 UTC] PHP Parse error:  syntax error, unexpected identifier "publi", expecting "function" in Standard input code on line 14
+[15-Jan-2024 08:36:24 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:24 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:24 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:25 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:26 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:26 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:27 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:28 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:28 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:28 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:28 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:28 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:29 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:29 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:29 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:30 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:30 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:30 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:30 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:30 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:30 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:31 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:32 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:32 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:32 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 08:36:32 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 15
+[15-Jan-2024 08:36:33 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 15
+[15-Jan-2024 08:36:33 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 15
+[15-Jan-2024 08:36:34 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 15
+[15-Jan-2024 08:36:34 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 15
+[15-Jan-2024 08:36:36 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 14
+[15-Jan-2024 08:36:36 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 14
+[15-Jan-2024 08:36:37 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 14
+[15-Jan-2024 08:36:37 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 14
+[15-Jan-2024 08:36:38 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 15
+[15-Jan-2024 08:36:38 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:39 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:39 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:40 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 08:36:45 UTC] PHP Parse error:  syntax error, unexpected identifier "p", expecting "function" in Standard input code on line 19
+[15-Jan-2024 08:36:46 UTC] PHP Parse error:  syntax error, unexpected identifier "pu", expecting "function" in Standard input code on line 19
+[15-Jan-2024 08:36:47 UTC] PHP Parse error:  syntax error, unexpected identifier "pub", expecting "function" in Standard input code on line 19
+[15-Jan-2024 08:36:47 UTC] PHP Parse error:  syntax error, unexpected identifier "publ", expecting "function" in Standard input code on line 19
+[15-Jan-2024 08:36:47 UTC] PHP Parse error:  syntax error, unexpected identifier "publo", expecting "function" in Standard input code on line 19
+[15-Jan-2024 08:36:48 UTC] PHP Parse error:  syntax error, unexpected identifier "publ", expecting "function" in Standard input code on line 19
+[15-Jan-2024 08:36:48 UTC] PHP Parse error:  syntax error, unexpected identifier "publi", expecting "function" in Standard input code on line 19
+[15-Jan-2024 08:36:49 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:49 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:49 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:49 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:49 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:49 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:50 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:50 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:50 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 20
+[15-Jan-2024 08:36:50 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 20
+[15-Jan-2024 08:36:50 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 20
+[15-Jan-2024 08:36:51 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:51 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:51 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:51 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:52 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:52 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:53 UTC] PHP Parse error:  Unclosed '(' on line 19 does not match '}' in Standard input code on line 20
+[15-Jan-2024 08:36:53 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 20
+[15-Jan-2024 08:36:54 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 21
+[15-Jan-2024 08:36:55 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 21
+[15-Jan-2024 08:36:55 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 20
+[15-Jan-2024 08:36:55 UTC] PHP Parse error:  Unclosed '(' on line 19 does not match '}' in Standard input code on line 20
+[15-Jan-2024 08:36:55 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:56 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:56 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:56 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:56 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:57 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:57 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 20
+[15-Jan-2024 08:36:57 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:58 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:58 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:58 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:58 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:59 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "(" in Standard input code on line 20
+[15-Jan-2024 08:36:59 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 20
+[15-Jan-2024 08:36:59 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 21
+[15-Jan-2024 08:36:59 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 21
+[15-Jan-2024 08:36:59 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 21
+[15-Jan-2024 08:37:00 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 21
+[15-Jan-2024 08:37:06 UTC] PHP Parse error:  syntax error, unexpected token ")", expecting variable in Standard input code on line 19
+[15-Jan-2024 08:37:06 UTC] PHP Parse error:  syntax error, unexpected token ")", expecting variable in Standard input code on line 19
+[15-Jan-2024 08:37:07 UTC] PHP Parse error:  syntax error, unexpected token ")", expecting variable in Standard input code on line 19
+[15-Jan-2024 08:37:07 UTC] PHP Parse error:  syntax error, unexpected token ")", expecting variable in Standard input code on line 19
+[15-Jan-2024 08:37:12 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable or "{" or "$" in Standard input code on line 22
+[15-Jan-2024 08:37:13 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:14 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:14 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:15 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:15 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:19 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:19 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:19 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:20 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:20 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable or "{" or "$" in Standard input code on line 22
+[15-Jan-2024 08:37:20 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:20 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:21 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:21 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:22 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 22
+[15-Jan-2024 08:37:22 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:25 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:25 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:25 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:25 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:26 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:26 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:26 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:26 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:28 UTC] PHP Parse error:  syntax error, unexpected string content "", expecting "]" in Standard input code on line 22
+[15-Jan-2024 08:37:28 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:29 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:29 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:29 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:29 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:30 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:31 UTC] PHP Parse error:  syntax error, unexpected token "=", expecting "]" in Standard input code on line 22
+[15-Jan-2024 08:37:31 UTC] PHP Parse error:  syntax error, unexpected token "]" in Standard input code on line 23
+[15-Jan-2024 08:37:32 UTC] PHP Parse error:  syntax error, unexpected token "]" in Standard input code on line 23
+[15-Jan-2024 08:37:32 UTC] PHP Parse error:  Unclosed '[' on line 21 does not match ')' in Standard input code on line 23
+[15-Jan-2024 08:37:32 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:34 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:34 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:37 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:37 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:39 UTC] PHP Parse error:  syntax error, unexpected identifier "max", expecting "]" in Standard input code on line 22
+[15-Jan-2024 08:37:39 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:40 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:40 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:40 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:41 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:41 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:41 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:41 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:41 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:42 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:42 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:42 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:42 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:42 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 24
+[15-Jan-2024 08:37:44 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 25
+[15-Jan-2024 08:37:45 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 25
+[15-Jan-2024 08:37:45 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 25
+[15-Jan-2024 08:37:45 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 25
+[15-Jan-2024 08:37:45 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 25
+[15-Jan-2024 08:37:45 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 25
+[15-Jan-2024 08:37:45 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 25
+[15-Jan-2024 08:38:16 UTC] PHP Parse error:  syntax error, unexpected token ":", expecting "]" in Standard input code on line 23
+[15-Jan-2024 08:38:17 UTC] PHP Parse error:  syntax error, unexpected token "}" in Standard input code on line 25
+[15-Jan-2024 10:20:49 UTC] PHP Parse error:  syntax error, unexpected identifier "p", expecting "function" in Standard input code on line 14
+[15-Jan-2024 10:20:49 UTC] PHP Parse error:  syntax error, unexpected identifier "pu", expecting "function" in Standard input code on line 14
+[15-Jan-2024 10:20:49 UTC] PHP Parse error:  syntax error, unexpected identifier "pub", expecting "function" in Standard input code on line 14
+[15-Jan-2024 10:20:49 UTC] PHP Parse error:  syntax error, unexpected identifier "publ", expecting "function" in Standard input code on line 14
+[15-Jan-2024 10:20:50 UTC] PHP Parse error:  syntax error, unexpected identifier "publi", expecting "function" in Standard input code on line 14
+[15-Jan-2024 10:20:50 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 10:20:50 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 10:20:50 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 10:20:50 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 10:20:51 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting variable in Standard input code on line 15
+[15-Jan-2024 10:20:51 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 15
+[15-Jan-2024 10:20:52 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 10:20:52 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 10:20:52 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" or "{" in Standard input code on line 16
+[15-Jan-2024 10:20:53 UTC] PHP Parse error:  Unclosed '{' on line 8 in Standard input code on line 17
+[17-Jan-2024 17:48:13 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Attribute [first] does not exist. in /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php:112
+Stack trace:
+#0 /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1502): Illuminate\Routing\RouteRegistrar->attribute('first', true)
+#1 /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate\Routing\Router->__call('first', Array)
+#2 Command line code(1): Illuminate\Support\Facades\Facade::__callStatic('first', Array)
+#3 {main}
+  thrown in /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php on line 112
+[17-Jan-2024 17:48:42 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Attribute [first] does not exist. in /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php:112
+Stack trace:
+#0 /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1502): Illuminate\Routing\RouteRegistrar->attribute('first', true)
+#1 /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate\Routing\Router->__call('first', Array)
+#2 Command line code(1): Illuminate\Support\Facades\Facade::__callStatic('first', Array)
+#3 {main}
+  thrown in /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php on line 112
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Event/WillShutdown.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Event/WillShutdown.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Core/Rpc/ResponseError.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Core/Rpc/ResponseError.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[18-Jan-2024 16:18:38 UTC] PHP Fatal error:  Uncaught Error: Class "Amp\Failure" not found in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php:177
+Stack trace:
+#0 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Coroutine.php(137): Amp\Coroutine->fail(Object(Error))
+#1 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php(149): Amp\Coroutine->Amp\{closure}(NULL, Object(Phpactor\LanguageServer\Core\Rpc\RawMessage))
+#2 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Coroutine.php(123): Amp\Coroutine->resolve(Object(Phpactor\LanguageServer\Core\Rpc\RawMessage))
+#3 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php(149): Amp\Coroutine->Amp\{closure}(NULL, 'Content-Length:...')
+#4 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Deferred.php(53): Amp\Promise@anonymous->resolve('Content-Length:...')
+#5 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/byte-stream/lib/ResourceInputStream.php(101): Amp\Deferred->resolve('Content-Length:...')
+#6 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/NativeDriver.php(327): Amp\ByteStream\ResourceInputStream::Amp\ByteStream\{closure}('a', Resource id #1, NULL)
+#7 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/NativeDriver.php(124): Amp\Loop\NativeDriver->selectStreams(Array, Array, 0.1)
+#8 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/Driver.php(138): Amp\Loop\NativeDriver->dispatch(true)
+#9 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/Driver.php(72): Amp\Loop\Driver->tick()
+#10 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop.php(95): Amp\Loop\Driver->run()
+#11 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/phpactor/language-server/lib/Core/Server/LanguageServer.php(111): Amp\Loop::run(Object(Closure))
+#12 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/lib/Extension/LanguageServer/Command/StartCommand.php(50): Phpactor\LanguageServer\Core\Server\LanguageServer->run()
+#13 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Command/Command.php(298): Phpactor\Extension\LanguageServer\Command\StartCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(1040): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Phpactor\Extension\LanguageServer\Command\StartCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/lib/Application.php(48): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(171): Phpactor\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/bin/phpactor(46): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 {main}
+  thrown in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php on line 177
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Event/WillShutdown.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Event/WillShutdown.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Core/Rpc/ResponseError.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../phpactor/language-server/lib/Core/Rpc/ResponseError.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php): Failed to open stream: No such file or directory in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Warning:  include(): Failed opening '/Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/../amphp/amp/lib/Failure.php' for inclusion (include_path='.:/opt/homebrew/Cellar/php/8.3.1/share/php/pear') in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/composer/ClassLoader.php on line 576
+[19-Jan-2024 18:46:55 UTC] PHP Fatal error:  Uncaught Error: Class "Amp\Failure" not found in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php:177
+Stack trace:
+#0 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Coroutine.php(137): Amp\Coroutine->fail(Object(Error))
+#1 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php(149): Amp\Coroutine->Amp\{closure}(NULL, Object(Phpactor\LanguageServer\Core\Rpc\RawMessage))
+#2 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Coroutine.php(123): Amp\Coroutine->resolve(Object(Phpactor\LanguageServer\Core\Rpc\RawMessage))
+#3 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php(149): Amp\Coroutine->Amp\{closure}(NULL, 'Content-Length:...')
+#4 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Deferred.php(53): Amp\Promise@anonymous->resolve('Content-Length:...')
+#5 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/byte-stream/lib/ResourceInputStream.php(101): Amp\Deferred->resolve('Content-Length:...')
+#6 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/NativeDriver.php(327): Amp\ByteStream\ResourceInputStream::Amp\ByteStream\{closure}('a', Resource id #1, NULL)
+#7 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/NativeDriver.php(124): Amp\Loop\NativeDriver->selectStreams(Array, Array, 0.1)
+#8 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/Driver.php(138): Amp\Loop\NativeDriver->dispatch(true)
+#9 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop/Driver.php(72): Amp\Loop\Driver->tick()
+#10 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Loop.php(95): Amp\Loop\Driver->run()
+#11 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/phpactor/language-server/lib/Core/Server/LanguageServer.php(111): Amp\Loop::run(Object(Closure))
+#12 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/lib/Extension/LanguageServer/Command/StartCommand.php(50): Phpactor\LanguageServer\Core\Server\LanguageServer->run()
+#13 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Command/Command.php(298): Phpactor\Extension\LanguageServer\Command\StartCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(1040): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Phpactor\Extension\LanguageServer\Command\StartCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/lib/Application.php(48): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/symfony/console/Application.php(171): Phpactor\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/bin/phpactor(46): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 {main}
+  thrown in /Users/raivokinne/.local/share/nvim/mason/packages/phpactor/vendor/amphp/amp/lib/Internal/Placeholder.php on line 177
+[19-Jan-2024 20:58:09 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Attribute [first] does not exist. in /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php:112
+Stack trace:
+#0 /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1502): Illuminate\Routing\RouteRegistrar->attribute('first', true)
+#1 /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate\Routing\Router->__call('first', Array)
+#2 Command line code(1): Illuminate\Support\Facades\Facade::__callStatic('first', Array)
+#3 {main}
+  thrown in /Users/raivokinne/personal/web/shop/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php on line 112
+[20-Jan-2024 04:45:30 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /Users/raivokinne/.composer/vendor/laravel/valet/server.php on line 27
+[20-Jan-2024 04:45:30 UTC] PHP Fatal error:  Uncaught TypeError: Valet\Server::hostIsIpAddress(): Argument #1 ($host) must be of type string, null given, called in /Users/raivokinne/.composer/vendor/laravel/valet/server.php on line 27 and defined in /Users/raivokinne/.composer/vendor/laravel/valet/cli/Valet/Server.php:76
+Stack trace:
+#0 /Users/raivokinne/.composer/vendor/laravel/valet/server.php(27): Valet\Server::hostIsIpAddress(NULL)
+#1 {main}
+  thrown in /Users/raivokinne/.composer/vendor/laravel/valet/cli/Valet/Server.php on line 76
+[20-Jan-2024 04:45:57 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /Users/raivokinne/.composer/vendor/laravel/valet/server.php on line 27
+[20-Jan-2024 04:45:57 UTC] PHP Fatal error:  Uncaught TypeError: Valet\Server::hostIsIpAddress(): Argument #1 ($host) must be of type string, null given, called in /Users/raivokinne/.composer/vendor/laravel/valet/server.php on line 27 and defined in /Users/raivokinne/.composer/vendor/laravel/valet/cli/Valet/Server.php:76
+Stack trace:
+#0 /Users/raivokinne/.composer/vendor/laravel/valet/server.php(27): Valet\Server::hostIsIpAddress(NULL)
+#1 {main}
+  thrown in /Users/raivokinne/.composer/vendor/laravel/valet/cli/Valet/Server.php on line 76
+[20-Jan-2024 04:45:57 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /Users/raivokinne/.composer/vendor/laravel/valet/server.php on line 27
+[20-Jan-2024 04:45:57 UTC] PHP Fatal error:  Uncaught TypeError: Valet\Server::hostIsIpAddress(): Argument #1 ($host) must be of type string, null given, called in /Users/raivokinne/.composer/vendor/laravel/valet/server.php on line 27 and defined in /Users/raivokinne/.composer/vendor/laravel/valet/cli/Valet/Server.php:76
+Stack trace:
+#0 /Users/raivokinne/.composer/vendor/laravel/valet/server.php(27): Valet\Server::hostIsIpAddress(NULL)
+#1 {main}
+  thrown in /Users/raivokinne/.composer/vendor/laravel/valet/cli/Valet/Server.php on line 76
