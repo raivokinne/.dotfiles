@@ -2,50 +2,14 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-alias ls="exa --icons --group-directories-first -1"
-function fzf
-    vim (command fzf $argv)
-end
-
-alias nvim-lazy "NVIM_APPNAME=LazyVim nvim"
-alias nvim-kick "NVIM_APPNAME=kickstart nvim"
-alias nvim-chad "NVIM_APPNAME=NvChad nvim"
-alias nvim-astro "NVIM_APPNAME=AstroNvim nvim"
-
-function nvims
-    set items "default" "kickstart" "LazyVim" "NvChad" "AstroNvim"
-    set config (printf "%s\n" $items | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
-    if test -z $config
-        echo "Nothing selected"
-        return 0
-    else if test $config = "default"
-        set config ""
-    end
-    set -x NVIM_APPNAME $config
-    nvim $argv
-end
-
-
-# Bind the function to Ctrl+a
-bind \ca 'nvims\n'
-
-alias i="brew install"
-alias b="brew"
+alias ls="exa --created --long --icons --color=always --no-user --no-time --no-permissions --no-filesize --octal-permissions"
 alias vim="nvim"
 alias personal="cd ~/personal"
-alias gp="git push -u origin master"
+alias gp="git push -u origin"
 alias gc="git commit -m"
 alias ga="git add ."
 alias gs="git status"
 alias gl="git log"
-
-function g
-    git $argv
-end
-
-function c
-    cd $argv
-end
 
 # Add .local/bin to PATH
 set -gx PATH /Users/raivokinne/.local/bin $PATH
@@ -91,3 +55,10 @@ if test -f /Users/raivokinne/anaconda3/bin/conda
 end
 # <<< conda initialize <<<
 
+
+# pnpm
+set -gx PNPM_HOME "/Users/raivokinne/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

@@ -1,0 +1,13 @@
+color = ''
+project-name = 'default'
+[default]
+account_id = 'acct_1P0SwbGBbkAeb36v'
+device_name = 'Galaxy-J7-2016'
+display_name = 'godssnus'
+live_mode_api_key = 'rk_live_***********************************************************************************************7Pn6'
+live_mode_key_expires_at = '2024-07-07'
+live_mode_pub_key = 'pk_live_51P0SwbGBbkAeb36v4fN9zYAR5GcgSOZ4bltNQE1lF8rrmfDuWKkxzAkSZGBgER7XyxT6gaFfL7ULtSPbXRUFYP2M00smYAvrqU'
+test_mode_api_key = 'rk_test_51P0SwbGBbkAeb36v30xzQrt90GKlDbiZJbwmZ7i9YUI9cf8WEsHLBKNA73QdoKSNuAKpHl9ifab5QeWxP6JfjkHV00Kpa1vJTM'
+test_mode_key_expires_at = '2024-07-07'
+test_mode_pub_key = 'pk_test_51P0SwbGBbkAeb36v4MtpcgR70gZFMPvS8gT20F2gFm5oGMRGrwznXbBAshrSnYKqkeOLU9oiDIuH226h8UbkwYjU0084w2Kn6O'
+
