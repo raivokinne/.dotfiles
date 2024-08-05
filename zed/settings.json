@@ -7,11 +7,27 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Rosé Pine",
+  "theme": "Serendipity Midnight Minimal - No Italics",
+  "ui_font_family": "Iosevka Nerd Font",
+  "scrollbar": {
+    "show": "never"
+  },
+  "use_autoclose": false,
+  "use_on_type_format": false,
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "buffer_font_family": "Iosevka Nerd Font",
   "telemetry": {
     "metrics": false
   },
+  "tab_bar": {
+    "show": false
+  },
+  "auto_update": true,
   "vim_mode": true,
   "ui_font_size": 16,
-  "buffer_font_size": 16
+  "buffer_font_size": 18,
+  "autosave": "off"
 }

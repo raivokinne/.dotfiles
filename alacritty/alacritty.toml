@@ -1,13 +1,19 @@
+# [env]
+# TERM = "xterm-256color"
+
 [colors]
 draw_bold_text_with_bright_colors = true
 
 [font]
 size = 18
-offset.x = 0
-offset.y = 0
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+# family = "VictorMono Nerd Font"
+# family = "JetBrainsMono Nerd Font"
+# family = "FiraCode Nerd Font"
+# family = "Iosevka Nerd Font"
+# family = "MartianMono Nerd Font"
+# family = "CaskaydiaCove Nerd Font"
 style = "Regular"
 
 [[keyboard.bindings]]
@@ -16,40 +22,64 @@ key = "Return"
 mods = "Super|Shift"
 
 [scrolling]
-history = 10000
+history = 10_000
 multiplier = 3
 
 [selection]
 save_to_clipboard = true
 
 [shell]
-program = "/usr/local/bin/fish"
+program = "/bin/zsh"
 
 [window]
 opacity = 1
-decorations = "None"
-decorations_theme_variant = "Dark"
+decorations = "Buttonless"
 
 [window.class]
 general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 4
-y = 0
+x = 10
+y = 10
 
-
+# TokyoNight Alacritty Colors
+# Default colors
 [colors.primary]
-background = "#141414"
-foreground = "#ffffff"
+background = '#1a1b26'
+foreground = '#c0caf5'
 
+#[colors.cursor]
+#cursor = '#c0caf5'
+#text = '#1a1b26'
+
+# Normal colors
 [colors.normal]
-black = "#000000"
-red = "#ff5555"
-green = "#50fa7b"
-yellow = "#f1fa8c"
-blue = "#bd93f9"
-magenta = "#ff79c6"
-cyan = "#8be9fd"
-white = "#ffffff"
+black = '#15161e'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#7aa2f7'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#a9b1d6'
 
+# Bright colors
+[colors.bright]
+black = '#414868'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#7aa2f7'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#c0caf5'
+
+# Indexed Colors
+[[colors.indexed_colors]]
+index = 16
+color = '#ff9e64'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#db4b4b'

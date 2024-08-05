@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# Start Yabai in the background and ensure it restarts if the Dock restarts
+yabai -m signal --add event=dock_did_restart action="brew services restart yabai"
+
+# Set the default layout to Binary Space Partitioning (BSP)
+yabai -m config layout bsp
+
+# New windows will spawn to the right if vertical split, or bottom if horizontal split
+yabai -m config window_placement second_child
+
+# Set padding around the screen edges
+yabai -m config top_padding 10
+yabai -m config bottom_padding 10
+yabai -m config left_padding 10
+yabai -m config right_padding 10
+
+# Set the gap between windows
+yabai -m config window_gap 10
+
+# Mouse settings
+
+# Center the mouse pointer on the window with focus
+yabai -m config mouse_follows_focus on
+
+# Use the 'alt' key as the modifier for mouse actions
+yabai -m config mouse_modifier alt
+
+# Set modifier + left-click drag to move windows
+yabai -m config mouse_action1 move
+
+# Set modifier + right-click drag to resize windows
+yabai -m config mouse_action2 resize
+
+# Disable Yabai management for specific applications
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^QuickTime Player$" manage=off
+
+# To enable window borders, you should use Skhd along with Yabai.
+# Make sure you have Skhd installed and properly configured.
+# Add the following Skhd configuration for border control.
+
+# ~/.skhdrc
+# Bind a shortcut to toggle borders (you can choose a different shortcut if you prefer)
+alt - b : yabai -m config --border on
+
+# Set the border width and color using yabai -m window --border
+# You need to apply these settings to individual windows using rules or window actions
+
+# Example rule to apply border settings
+yabai -m rule --add app="^.*$" border=on
+yabai -m window --border width 6
+yabai -m window --border color 0xff0000ff
+
+# The above commands add borders to all new windows. Adjust as needed.
+

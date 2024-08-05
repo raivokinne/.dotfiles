@@ -1,0 +1,9 @@
+_HiStOrY_V2_
+ls
+clear
+npm\040run\040dev
+ls
+clear
+exit
+$user\040=\040User::fin(1)
+$user\040=\040User::find(1)
